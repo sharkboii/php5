@@ -27,7 +27,7 @@ class QueryBuilder
 
   public function where( string $conditions): QueryBuilder
   {
-    $this->conditions = $where;
+    $this->conditions .= 'where '. $conditions.' ';
     return $this;
   }
 
